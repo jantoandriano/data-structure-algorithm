@@ -12,14 +12,13 @@ const palindrome = (s) => {
             }
         }
         return ans;
-        
     }
     const isPal = (s) => {
         if (s.length <= 1) {
             return true
         } 
         
-        return s[0] == s[s.length-1] && isPal(s.slice(1, s.length-1))
+        return s[0] === s[s.length-1] && isPal(s.slice(1, s.length-1))
         
     }
     return isPal(toChars(s))
