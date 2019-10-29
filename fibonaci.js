@@ -6,7 +6,6 @@ const fibonaci = (number) => {
     }
 }
 
-console.log(fibonaci(1));
-console.log(fibonaci(2));
-console.log(fibonaci(3));
-console.log(fibonaci(4));
+for (let index = 0; index < 6; index++) {
+    console.log(index, "", fibonaci(index));
+}
